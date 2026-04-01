@@ -4,25 +4,25 @@ class DecisionAgent:
         self.threshold = threshold
 
         self.weights = {
-            "RandomForest": 0.25,
-            "XGBoost": 0.25,
-            "SVM": 0.2,
-            "Logistic": 0.15,
-            "NeuralNet": 0.15
+            "RandomForest": 0.15,
+            "XGBoost": 0.3,   
+            "SVM": 0.1,
+            "Logistic": 0.05,
+            "NeuralNet": 0.2,
+            "LSTM": 0.2,
         }
 
     def _decide(self, predictions):
         score = 0
 
         for model, weight in self.weights.items():
-            pred = predictions.get(model, 0)
-            score += pred * weight
+            score += predictions.get(model, 0) * weight
 
-        if "NN_Prob" in predictions:
-            nn_prob = predictions["NN_Prob"]
-            score += 0.1 * nn_prob
+        # probability boosts
+        score += 0.1 * predictions.get("NN_Prob", 0)
+        score += 0.1 * predictions.get("LSTM_Prob", 0)
 
-        max_score = sum(self.weights.values()) + 0.1
+        max_score = sum(self.weights.values()) + 0.2
         confidence = score / max_score
 
         if confidence >= self.threshold:
@@ -36,26 +36,19 @@ class DecisionAgent:
             "decision": decision,
             "confidence": round(confidence, 3),
             "action": action,
-            "raw_score": round(score, 3)
+            "raw_score": round(score, 3),
         }
 
     def run(self):
-        """
-        Reads predictions from context → writes decision to context
-        """
-
         predictions = self.context.get("predictions")
-
         if predictions is None:
-            print("⚠️ DecisionAgent: No predictions found in context")
             return
 
         print("\n🧠 DecisionAgent running...")
 
         decision = self._decide(predictions)
 
-        print("\n🧠 Decision Debug Info:")
-        print("   Raw Score:", decision["raw_score"])
+        print("   Score:", decision["raw_score"])
         print("   Confidence:", decision["confidence"])
 
         self.context.update("decision", {
@@ -64,12 +57,16 @@ class DecisionAgent:
             "action": decision["action"]
         })
 
-        history = self.context.get("history", [])
-        history.append({
+        # FIX: use append instead of overwrite
+        self.context.append("history", {
             "predictions": predictions,
             "decision": decision
         })
-        self.context.update("history", history)
+
+        self.context.append("logs", {
+            "type": "decision",
+            "data": decision
+        })
 
         self.context.update("event", {
             "type": "decision_made",
