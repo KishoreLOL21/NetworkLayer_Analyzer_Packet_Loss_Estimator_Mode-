@@ -61,7 +61,7 @@ class PredictorAgent:
         # LSTM (NEW)
         try:
             self.lstm = tf.keras.models.load_model(
-                os.path.join(MODEL_DIR, "lstm_model.h5"),
+                os.path.join(MOzDEL_DIR, "lstm_model.h5"),
                 compile=False
             )
         except:
@@ -133,7 +133,6 @@ class PredictorAgent:
             results["NeuralNet"] = 0
             results["NN_Prob"] = 0.0
 
-        # 🔥 LSTM (sequence-based)
         self.sequence_buffer.append(X[0])
 
         if len(self.sequence_buffer) > self.sequence_length:

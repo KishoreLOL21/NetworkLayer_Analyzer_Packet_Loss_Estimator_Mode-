@@ -9,10 +9,6 @@ except ImportError:
 MODE = "test"
 PCAP_FILE = "../Data/capture_loss10.pcap"
 
-
-# ==================================================
-# 🔥 ALL 5 SAMPLES = PACKET LOSS (1)
-# ==================================================
 test_packets = [
 
     {
@@ -72,9 +68,6 @@ test_packets = [
 ]
 
 
-# ==================================================
-# RUN TEST MODE
-# ==================================================
 def run_test_mode(orchestrator):
     print("\n🧪 Running TEST MODE (ALL LOSS CASES)\n")
 
@@ -86,9 +79,6 @@ def run_test_mode(orchestrator):
         print("🎯 FINAL DECISION:", decision)
 
 
-# ==================================================
-# STREAM MODE
-# ==================================================
 def run_stream_mode(orchestrator):
     if not STREAM_AVAILABLE:
         print("⚠️ Streaming module not available.")

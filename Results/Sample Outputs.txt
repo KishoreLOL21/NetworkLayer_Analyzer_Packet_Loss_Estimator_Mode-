@@ -1,0 +1,1123 @@
+Sample Outputs:
+
+Case - 1: Static Input Test
+
+PS D:\PJT 2 Capstone Project\Code> python main.py
+2026-04-04 09:45:18.909594: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-04-04 09:45:20.508972: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+
+🧪 Running TEST MODE (ALL LOSS CASES)
+
+
+---------------- SAMPLE 1 -------------------
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+
+---------------- SAMPLE 2 -------------------
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 1, 'XGBoost': 1, 'SVM': 1, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.6
+   Confidence: 0.5
+⚡ Final Decision: PACKET LOSS DETECTED
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.6
+   Confidence: 0.5
+⚡ Final Decision: PACKET LOSS DETECTED
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'PACKET LOSS DETECTED', 'confidence': 0.5, 'action': 'Reduce congestion / Trigger alert'}
+🎯 FINAL DECISION: {'decision': 'PACKET LOSS DETECTED', 'confidence': 0.5, 'action': 'Reduce congestion / Trigger alert'}
+
+---------------- SAMPLE 3 -------------------
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 1, 'XGBoost': 1, 'SVM': 1, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.6
+   Confidence: 0.5
+⚡ Final Decision: PACKET LOSS DETECTED
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.6
+   Confidence: 0.5
+⚡ Final Decision: PACKET LOSS DETECTED
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'PACKET LOSS DETECTED', 'confidence': 0.5, 'action': 'Reduce congestion / Trigger alert'}
+🎯 FINAL DECISION: {'decision': 'PACKET LOSS DETECTED', 'confidence': 0.5, 'action': 'Reduce congestion / Trigger alert'}
+
+---------------- SAMPLE 4 -------------------
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 1, 'SVM': 1, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.45
+   Confidence: 0.375
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.45
+   Confidence: 0.375
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.375, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.375, 'action': 'Continue monitoring'}
+
+---------------- SAMPLE 5 -------------------
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 1, 'SVM': 0, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.35
+   Confidence: 0.292
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.35
+   Confidence: 0.292
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.292, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.292, 'action': 'Continue monitoring'}
+PS D:\PJT 2 Capstone Project\Code> 
+
+Case - 2: Scan The Network Layer
+
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 1, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.15
+   Confidence: 0.125
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.15
+   Confidence: 0.125
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.125, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.125, 'action': 'Continue monitoring'}
+
+📦 Packet #17
+Raw Features: {'src_port': 51396, 'dst_port': 443, 'seq': 835, 'ack': 398, 'inter_arrival_time': 0.044103145599365234, 'rolling_loss_rate': 0.1, 'retransmission': 0, 'payload_len': 0}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+
+📦 Packet #18
+Raw Features: {'src_port': 52343, 'dst_port': 443, 'seq': 1350, 'ack': 134, 'inter_arrival_time': 2.129009485244751, 'rolling_loss_rate': 0.1, 'retransmission': 0, 'payload_len': 113}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 1, 'XGBoost': 1, 'SVM': 1, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.6
+   Confidence: 0.5
+⚡ Final Decision: PACKET LOSS DETECTED
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.6
+   Confidence: 0.5
+⚡ Final Decision: PACKET LOSS DETECTED
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'PACKET LOSS DETECTED', 'confidence': 0.5, 'action': 'Reduce congestion / Trigger alert'}
+🎯 FINAL DECISION: {'decision': 'PACKET LOSS DETECTED', 'confidence': 0.5, 'action': 'Reduce congestion / Trigger alert'}
+
+📦 Packet #19
+Raw Features: {'src_port': 52343, 'dst_port': 443, 'seq': 1463, 'ack': 134, 'inter_arrival_time': 0.0001468658447265625, 'rolling_loss_rate': 0.1, 'retransmission': 0, 'payload_len': 1156}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 1, 'SVM': 0, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.35
+   Confidence: 0.292
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.35
+   Confidence: 0.292
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.292, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.292, 'action': 'Continue monitoring'}
+
+📦 Packet #20
+Raw Features: {'src_port': 443, 'dst_port': 52343, 'seq': 134, 'ack': 2619, 'inter_arrival_time': 0.3134300708770752, 'rolling_loss_rate': 0.1, 'retransmission': 0, 'payload_len': 0}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+
+📦 Packet #21
+Raw Features: {'src_port': 443, 'dst_port': 52343, 'seq': 134, 'ack': 2619, 'inter_arrival_time': 0.0, 'rolling_loss_rate': 0.1, 'retransmission': 0, 'payload_len': 98}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+
+📦 Packet #22
+Raw Features: {'src_port': 52343, 'dst_port': 443, 'seq': 2619, 'ack': 232, 'inter_arrival_time': 0.0013327598571777344, 'rolling_loss_rate': 0.1, 'retransmission': 0, 'payload_len': 35}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+
+📦 Packet #23
+Raw Features: {'src_port': 443, 'dst_port': 52343, 'seq': 232, 'ack': 2654, 'inter_arrival_time': 0.38014864921569824, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 0}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 1, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.15
+   Confidence: 0.125
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.15
+   Confidence: 0.125
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.125, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.125, 'action': 'Continue monitoring'}
+
+📦 Packet #24
+Raw Features: {'src_port': 59654, 'dst_port': 443, 'seq': 1, 'ack': 1, 'inter_arrival_time': 2.023374319076538, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 35}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 1, 'XGBoost': 1, 'SVM': 1, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.6
+   Confidence: 0.5
+⚡ Final Decision: PACKET LOSS DETECTED
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.6
+   Confidence: 0.5
+⚡ Final Decision: PACKET LOSS DETECTED
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'PACKET LOSS DETECTED', 'confidence': 0.5, 'action': 'Reduce congestion / Trigger alert'}
+🎯 FINAL DECISION: {'decision': 'PACKET LOSS DETECTED', 'confidence': 0.5, 'action': 'Reduce congestion / Trigger alert'}
+
+📦 Packet #25
+Raw Features: {'src_port': 443, 'dst_port': 59654, 'seq': 1, 'ack': 36, 'inter_arrival_time': 0.2288818359375, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 0}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 0, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.0
+   Confidence: 0.0
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.0
+   Confidence: 0.0
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.0, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.0, 'action': 'Continue monitoring'}
+
+📦 Packet #26
+Raw Features: {'src_port': 50905, 'dst_port': 443, 'seq': 1, 'ack': 1, 'inter_arrival_time': 9.791852474212646, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 1}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 1, 'XGBoost': 1, 'SVM': 0, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.5
+   Confidence: 0.417
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.5
+   Confidence: 0.417
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.417, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.417, 'action': 'Continue monitoring'}
+
+📦 Packet #27
+Raw Features: {'src_port': 443, 'dst_port': 50905, 'seq': 1, 'ack': 2, 'inter_arrival_time': 0.2442789077758789, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 0}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+
+📦 Packet #28
+Raw Features: {'src_port': 59654, 'dst_port': 443, 'seq': 36, 'ack': 1, 'inter_arrival_time': 6.9155800342559814, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 37}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 1, 'XGBoost': 1, 'SVM': 1, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.6
+   Confidence: 0.5
+⚡ Final Decision: PACKET LOSS DETECTED
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.6
+   Confidence: 0.5
+⚡ Final Decision: PACKET LOSS DETECTED
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'PACKET LOSS DETECTED', 'confidence': 0.5, 'action': 'Reduce congestion / Trigger alert'}
+🎯 FINAL DECISION: {'decision': 'PACKET LOSS DETECTED', 'confidence': 0.5, 'action': 'Reduce congestion / Trigger alert'}
+
+📦 Packet #29
+Raw Features: {'src_port': 443, 'dst_port': 59654, 'seq': 1, 'ack': 73, 'inter_arrival_time': 0.2515716552734375, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 33}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 0, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.0
+   Confidence: 0.0
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.0
+   Confidence: 0.0
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.0, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.0, 'action': 'Continue monitoring'}
+
+📦 Packet #30
+Raw Features: {'src_port': 443, 'dst_port': 59654, 'seq': 1, 'ack': 73, 'inter_arrival_time': 0.0, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 0}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 0, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.0
+   Confidence: 0.0
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.0
+   Confidence: 0.0
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.0, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.0, 'action': 'Continue monitoring'}
+
+📦 Packet #31
+Raw Features: {'src_port': 59654, 'dst_port': 443, 'seq': 73, 'ack': 34, 'inter_arrival_time': 0.0002567768096923828, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 0}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+
+📦 Packet #32
+Raw Features: {'src_port': 50916, 'dst_port': 443, 'seq': 0, 'ack': 0, 'inter_arrival_time': 11.719079494476318, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 0}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 1, 'XGBoost': 1, 'SVM': 1, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.6
+   Confidence: 0.5
+⚡ Final Decision: PACKET LOSS DETECTED
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.6
+   Confidence: 0.5
+⚡ Final Decision: PACKET LOSS DETECTED
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'PACKET LOSS DETECTED', 'confidence': 0.5, 'action': 'Reduce congestion / Trigger alert'}
+🎯 FINAL DECISION: {'decision': 'PACKET LOSS DETECTED', 'confidence': 0.5, 'action': 'Reduce congestion / Trigger alert'}
+
+📦 Packet #33
+Raw Features: {'src_port': 443, 'dst_port': 50916, 'seq': 0, 'ack': 1, 'inter_arrival_time': 0.26082634925842285, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 0}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+
+📦 Packet #34
+Raw Features: {'src_port': 50916, 'dst_port': 443, 'seq': 1, 'ack': 1, 'inter_arrival_time': 0.00022482872009277344, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 0}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+
+📦 Packet #35
+Raw Features: {'src_port': 50916, 'dst_port': 443, 'seq': 1, 'ack': 1, 'inter_arrival_time': 0.00043892860412597656, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 517}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 1, 'XGBoost': 1, 'SVM': 0, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.5
+   Confidence: 0.417
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.5
+   Confidence: 0.417
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.417, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.417, 'action': 'Continue monitoring'}
+
+📦 Packet #36
+Raw Features: {'src_port': 52343, 'dst_port': 443, 'seq': 2654, 'ack': 232, 'inter_arrival_time': 0.049532175064086914, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 118}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+
+📦 Packet #37
+Raw Features: {'src_port': 52343, 'dst_port': 443, 'seq': 2772, 'ack': 232, 'inter_arrival_time': 7.987022399902344e-05, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 39}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+
+📦 Packet #38
+Raw Features: {'src_port': 52343, 'dst_port': 443, 'seq': 2811, 'ack': 232, 'inter_arrival_time': 2.288818359375e-05, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 2524}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 0, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.0
+   Confidence: 0.0
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.0
+   Confidence: 0.0
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.0, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.0, 'action': 'Continue monitoring'}
+
+📦 Packet #39
+Raw Features: {'src_port': 443, 'dst_port': 50916, 'seq': 1, 'ack': 518, 'inter_arrival_time': 0.15497446060180664, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 99}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 0, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.0
+   Confidence: 0.0
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.0
+   Confidence: 0.0
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.0, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.0, 'action': 'Continue monitoring'}
+
+📦 Packet #40
+Raw Features: {'src_port': 50916, 'dst_port': 443, 'seq': 518, 'ack': 100, 'inter_arrival_time': 0.0017676353454589844, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 437}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 1, 'SVM': 0, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.35
+   Confidence: 0.292
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.35
+   Confidence: 0.292
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.292, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.292, 'action': 'Continue monitoring'}
+
+📦 Packet #41
+Raw Features: {'src_port': 443, 'dst_port': 52343, 'seq': 232, 'ack': 2654, 'inter_arrival_time': 0.20343828201293945, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 0}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+
+📦 Packet #42
+Raw Features: {'src_port': 443, 'dst_port': 52343, 'seq': 232, 'ack': 2811, 'inter_arrival_time': 0.0006527900695800781, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 0}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 0, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.0
+   Confidence: 0.0
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.0
+   Confidence: 0.0
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.0, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.0, 'action': 'Continue monitoring'}
+
+📦 Packet #43
+Raw Features: {'src_port': 443, 'dst_port': 52343, 'seq': 232, 'ack': 5335, 'inter_arrival_time': 0.0, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 0}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 0, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.0
+   Confidence: 0.0
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.0
+   Confidence: 0.0
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.0, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.0, 'action': 'Continue monitoring'}
+
+📦 Packet #44
+Raw Features: {'src_port': 443, 'dst_port': 52343, 'seq': 232, 'ack': 2811, 'inter_arrival_time': 0.0, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 0}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 0, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.0
+   Confidence: 0.0
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.0
+   Confidence: 0.0
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.0, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.0, 'action': 'Continue monitoring'}
+
+📦 Packet #45
+Raw Features: {'src_port': 443, 'dst_port': 52343, 'seq': 232, 'ack': 5335, 'inter_arrival_time': 0.0, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 39}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 0, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.0
+   Confidence: 0.0
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.0
+   Confidence: 0.0
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.0, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.0, 'action': 'Continue monitoring'}
+
+📦 Packet #46
+Raw Features: {'src_port': 443, 'dst_port': 50916, 'seq': 100, 'ack': 955, 'inter_arrival_time': 0.0, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 1262}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 1, 'XGBoost': 1, 'SVM': 0, 'Logistic': 0, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.45
+   Confidence: 0.375
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.45
+   Confidence: 0.375
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.375, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.375, 'action': 'Continue monitoring'}
+
+📦 Packet #47
+Raw Features: {'src_port': 443, 'dst_port': 50916, 'seq': 3886, 'ack': 955, 'inter_arrival_time': 0.0, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 596}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 0, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.0
+   Confidence: 0.0
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.0
+   Confidence: 0.0
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.0, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.0, 'action': 'Continue monitoring'}
+
+📦 Packet #48
+Raw Features: {'src_port': 443, 'dst_port': 50916, 'seq': 1362, 'ack': 955, 'inter_arrival_time': 0.0, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 1262}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 1, 'XGBoost': 1, 'SVM': 0, 'Logistic': 0, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.45
+   Confidence: 0.375
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.45
+   Confidence: 0.375
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.375, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.375, 'action': 'Continue monitoring'}
+
+📦 Packet #49
+Raw Features: {'src_port': 443, 'dst_port': 50916, 'seq': 2624, 'ack': 955, 'inter_arrival_time': 0.0, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 1262}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 1, 'XGBoost': 1, 'SVM': 0, 'Logistic': 0, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.45
+   Confidence: 0.375
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.45
+   Confidence: 0.375
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.375, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.375, 'action': 'Continue monitoring'}
+
+📦 Packet #50
+Raw Features: {'src_port': 50916, 'dst_port': 443, 'seq': 955, 'ack': 1362, 'inter_arrival_time': 0.0003581047058105469, 'rolling_loss_rate': 0.0, 'retransmission': 0, 'payload_len': 0}
+
+🚀 Orchestrator started
+
+⚙️ Executing agent: predictor
+
+🤖 PredictorAgent running...
+📊 Predictor Output: {'RandomForest': 0, 'XGBoost': 0, 'SVM': 0, 'Logistic': 1, 'NeuralNet': 0, 'LSTM': 0}
+🔁 Triggered by event → decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+⚙️ Executing agent: decision
+
+🧠 DecisionAgent running...
+   Score: 0.05
+   Confidence: 0.042
+⚡ Final Decision: NO LOSS
+🔁 Triggered by event → feedback
+
+🏁 Final Output: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+🎯 FINAL DECISION: {'decision': 'NO LOSS', 'confidence': 0.042, 'action': 'Continue monitoring'}
+
+🛑 Stopping capture (limit reached)
+PS D:\PJT 2 Capstone Project\Code> 
