@@ -9,7 +9,7 @@ class DecisionAgent:
             "SVM": 0.1,
             "Logistic": 0.05,
             "NeuralNet": 0.2,
-            "LSTM": 0.2,
+            "LSTM": 0,
         }
 
     def _decide(self, predictions):
