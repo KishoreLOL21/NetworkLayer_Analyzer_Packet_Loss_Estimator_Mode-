@@ -61,7 +61,7 @@ class PredictorAgent:
         # LSTM (NEW)
         try:
             self.lstm = tf.keras.models.load_model(
-                os.path.join(MOzDEL_DIR, "lstm_model.h5"),
+                os.path.join(MODEL_DIR, "lstm_model.h5"),
                 compile=False
             )
         except:

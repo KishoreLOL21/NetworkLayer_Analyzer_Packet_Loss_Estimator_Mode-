@@ -95,9 +95,6 @@ def run_stream_mode(orchestrator):
         print("\n🛑 Streaming stopped by user")
 
 
-# ==================================================
-# ENTRY POINT
-# ==================================================
 if __name__ == "__main__":
     orchestrator = AgentOrchestrator()
 
