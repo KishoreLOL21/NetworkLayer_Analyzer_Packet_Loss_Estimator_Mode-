@@ -104,7 +104,7 @@ def run_live_mode(orchestrator):
                 continue
 
             print(f"\n📦 Packet #{count + 1}")
-            print("Raw Features:", packet)
+            # print("Raw Features:", packet)
 
             decision = orchestrator.run(packet)
 
